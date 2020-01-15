@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Resume"
+---
+
+{% include sitenav.html %}
+<div id="page">
+  <div class="wrapper">
+    <div id="content">
+      <h1 class="page-title">Resume</h1>
+      <ol id="timeline">
+        {% for item in site.data.resume %}
+          <li class="resume-item">
+            <h4>{{ item.title }}, <a href="{{ item.url }}">{{ item.company }}</a> • <time>{{ item.timeperiod }}</time></h4>
+            <ul class="resume-bullets">
+              {% for bullet in item.responsibilities %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>

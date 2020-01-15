@@ -1,0 +1,62 @@
+- title: Systems Development
+  company: Beggars Group USA
+  timeperiod: October 2017 - Present
+  type: Job
+  url: https://www.beggars.com/
+  responsibilities:
+    - Database (PostgreSQL/Amazon Redshift based) development on Beggars' sales statement processing and catalog maintenance system.
+    - Configuring and maintaining ETL processes for daily, weekly and monthly sales reporting from DSPs, physical distributors and performing rights societies.
+    - Migrating data from legacy sales reporting systems and integrating it into a data warehouse application to support lifetime sales reporting.
+    - Development of sales and catalog data transfers to Beggars' royalty systems.
+    - Development of a data warehouse schema (Microsoft SQL Server based) to support internal royalties reporting.
+    - Preparation of ad hoc sales and catalog reports with Tableau and Microsoft Excel.
+    - Bug and data fixes.
+- title: Consultant
+  company: Beggars Group USA
+  timeperiod: April 2017 - October 2017
+  type: Job
+  url: https://www.beggars.com/
+  responsibilities:
+    - Assisted Beggars with data migration, documentation of business processes, preparation of requirements, and user acceptance testing during their transition to Korrect Online royalties software.
+    - Assisted with royalties tasks as needed.
+- title: Student
+  company: Dev Bootcamp
+  timeperiod: February 2017 - April 2017
+  type: Education
+  url: https://en.wikipedia.org/wiki/Dev_Bootcamp
+  responsibilities:
+    - 18 week (9 weeks independent study, 9 weeks full time onsite instruction) program covering programming fundamentals, web development and the Ruby on Rails framework.
+- title: Royalties Coordinator
+  company: Beggars Group USA
+  timeperiod: February 2013 - February 2017
+  type: Job
+  url: https://www.beggars.com/
+  responsibilities:
+    - Generated master use and US mechanical royalty statements using Korrect royalties system.
+    - Provided requirements for and tested new features of Korrect, mostly related to US mechanical royalty calculation and statement generation.
+    - Prepared board reporting and audit materials, and responded to statement related inquiries from artists, managers and publishers.
+    - Registered recordings with the US copyright office and assisted with mechanical license requests.
+- title: Royalties Assistant
+  company: Beggars Group USA
+  timeperiod: July 2012 - February 2013
+  type: Job
+  url: https://www.beggars.com/
+  responsibilities:
+    - Processed monthly sales statements into Korrect royalties software.
+    - Organized physical files.
+    - Data entry.
+- title: Media Assistant
+  company: Kimmel Media Services
+  timeperiod: January 2008 - June 2012
+  type: Job
+  url: https://www.nyu.edu/community/conference-event-services/amenities-and-services/multimedia-resources.html
+  responsibilities:
+    - Provided A/V tech support to student groups and outside clients at NYU's Kimmel Center for Student Life.
+- title: Student
+  company: New York University
+  timeperiod: September 2008 - May 2012
+  type: Education
+  url: https://steinhardt.nyu.edu/programs/music-business
+  responsibilities:
+    - B. Mus, Music Business
+    - Coursework covered general business, music theory, aural comprehension, and music business specializations.
