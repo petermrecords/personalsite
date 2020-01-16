@@ -91,11 +91,46 @@ div.sitenav-section {
   color: $darkRed;
 }
 
-#timeline {
-  li {
+#timeline-line {
+  position: absolute;
+  left: 2.5em;
+  height: 100%;
+  width: 10px;
+  background: $darkRed;
+  z-index: -1;
+}
+
+#timeline-items {
+  padding-left: 0px;
+  .resume-item {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     list-style-type: none;
   }
-  .resume-bullets {
+  .resume-item-headline {
+    .resume-headline-text {
+      display: inline;
+      border-bottom: 1px dotted $darkRed;
+      margin-left: 0.6em;
+      width: 100%;
+    }
+    i {
+      font-size: 3em;
+      color: $darkGreen;
+      background: $backgroundColor;
+    }
+    span.title {
+      font-size: 1.5em;
+    }
+    span.company {
+      margin-left: 0.25em;
+      font-size: 1.3em;
+    }
+  }
+  .resume-item-body {
+    margin-top: 1em;
+    margin-left: 3.5em;
+    display: none;
     li {
       list-style-type: square;
     }
