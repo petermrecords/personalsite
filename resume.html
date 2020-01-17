@@ -5,14 +5,21 @@ title: "Resume"
 
 {% include sitenav.html %}
 <div id="page">
+  <div class="title-section">
+    <div class="wrapper">
+      <h1 class="page-title">Resume</h1>
+    </div>
+  </div>
   <div class="wrapper">
     <div id="content">
-      <h1 class="page-title">Resume</h1>
-      <div id="timeline">
-        <div id="timeline-line"></div>
+      <div id="timeline-line"></div>
+      <div id="timeline" class="content-section">
         <ol id="timeline-items">
           {% for item in site.data.resume %}
             <li class="resume-item">
+              <div class="resume-time">
+                <time>{{ item.timeperiod }}</time>
+              </div>
               <div class="resume-item-headline">
                 {% if item.type == "Job" %}
                   <i class="fas fa-cogs"></i>
@@ -22,7 +29,6 @@ title: "Resume"
                 <div class="resume-headline-text">
                   <span class="title">{{ item.title }}</span>
                   <span class="company"><a href="{{ item.url }}">{{ item.company }}</a></span>
-                  <time>{{ item.timeperiod }}</time>
                 </div>
               </div>
               <div class="resume-item-body hidden">

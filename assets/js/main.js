@@ -1,17 +1,26 @@
+function setTimelineHeight() {
+  var height = $("#timeline-items").height();
+  $("#timeline-line").height(height);
+  console.log("AS");
+};
+
+function toggleResumeDetails(element) {
+  var resumeBody = $(element).parent().parent().find(".resume-item-body");
+  resumeBody.slideToggle(500, function() {
+    setTimelineHeight();
+  });
+};
+
 $(document).ready(function() {
 
+  $("#timeline-items").ready(function(e) {
+    setTimelineHeight();
+  });
+
   // show/hide resume details
-  $(".resume-item-headline").click(function(e) {
-    var resumeBody = $(this).parent().find(".resume-item-body");
-    if (resumeBody.hasClass("hidden")) {
-      resumeBody.fadeIn(500, function() {
-        resumeBody.removeClass("hidden");
-      });
-    } else {
-      resumeBody.fadeOut(500, function() {
-        resumeBody.addClass("hidden");
-      });
-    }
+
+  $(".resume-item-headline i").click(function(e) {
+    toggleResumeDetails(this);
   });
 
 });

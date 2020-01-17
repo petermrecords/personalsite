@@ -1,6 +1,8 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
+
 $bodyFont: 'Nunito', sans-serif;
+$titleFont: 'Share Tech Mono', monospace;
 
 $lightRed: #CE7171;
 $red: #BE4141;
@@ -50,10 +52,15 @@ a:visted {
   top: 0;
   width: 100%;
   box-shadow: 0px 1px 4px black;
+  z-index: 1;
   #sitenav-brand {
-    font-size: 1.5em;
-    margin-right: 1em;
+    font-size: 2em;
+    margin-right: 0.5em;
     margin-left: 1em;
+    font-family: $titleFont;
+    i {
+      color: white;
+    }
   }
   a {
     color: white;
@@ -85,7 +92,7 @@ div.sitenav-section {
   }
 }
 
-#content {
+#content, .title-section {
   padding-left: 1em;
   padding-right: 1em;
   color: $darkRed;
@@ -98,6 +105,8 @@ div.sitenav-section {
   width: 10px;
   background: $darkRed;
   z-index: -1;
+  padding: 0;
+  margin: 0;
 }
 
 #timeline-items {
@@ -107,24 +116,33 @@ div.sitenav-section {
     padding-bottom: 1.5em;
     list-style-type: none;
   }
+  .resume-time {
+    display: none;
+  }
   .resume-item-headline {
     .resume-headline-text {
       display: inline;
       border-bottom: 1px dotted $darkRed;
       margin-left: 0.6em;
       width: 100%;
+      .title {
+        font-family: $titleFont;
+      }
     }
     i {
       font-size: 3em;
       color: $darkGreen;
       background: $backgroundColor;
     }
+    i:hover {
+      text-shadow: 1px 1px 2px $darkGreen;
+    }
     span.title {
       font-size: 1.5em;
     }
     span.company {
       margin-left: 0.25em;
-      font-size: 1.3em;
+      font-size: 0.8em;
     }
   }
   .resume-item-body {
@@ -135,4 +153,19 @@ div.sitenav-section {
       list-style-type: square;
     }
   }
+}
+
+.page-title {
+  font-family: $titleFont;
+}
+
+.title-section {
+  position: fixed;
+  top: 84px;
+  background: $backgroundColor;
+  width: 100%;
+}
+
+.content-section {
+  margin-top: 95px;
 }
