@@ -3,6 +3,7 @@
   timeperiod: October 2017 - Present
   type: Job
   url: https://www.beggars.com/
+  icon: cogs
   responsibilities:
     - Database (PostgreSQL/Amazon Redshift based) development on Beggars' sales statement processing and catalog maintenance system.
     - Configuring and maintaining ETL processes for daily, weekly and monthly sales reporting from DSPs, physical distributors and performing rights societies.
@@ -16,6 +17,7 @@
   timeperiod: April 2017 - October 2017
   type: Job
   url: https://www.beggars.com/
+  icon: comments
   responsibilities:
     - Assisted Beggars with data migration, documentation of business processes, preparation of requirements, and user acceptance testing during their transition to Korrect Online royalties software.
     - Assisted with royalties tasks as needed.
@@ -24,6 +26,7 @@
   timeperiod: February 2017 - April 2017
   type: Education
   url: https://en.wikipedia.org/wiki/Dev_Bootcamp
+  icon: code
   responsibilities:
     - 18 week (9 weeks independent study, 9 weeks full time onsite instruction) program covering programming fundamentals, web development and the Ruby on Rails framework.
 - title: Royalties Coordinator
@@ -31,6 +34,7 @@
   timeperiod: February 2013 - February 2017
   type: Job
   url: https://www.beggars.com/
+  icon: hand-holding-usd
   responsibilities:
     - Generated master use and US mechanical royalty statements using Korrect royalties system.
     - Provided requirements for and tested new features of Korrect, mostly related to US mechanical royalty calculation and statement generation.
@@ -41,6 +45,7 @@
   timeperiod: July 2012 - February 2013
   type: Job
   url: https://www.beggars.com/
+  icon: hand-holding-usd
   responsibilities:
     - Processed monthly sales statements into Korrect royalties software.
     - Organized physical files.
@@ -50,6 +55,7 @@
   timeperiod: January 2008 - June 2012
   type: Job
   url: https://www.nyu.edu/community/conference-event-services/amenities-and-services/multimedia-resources.html
+  icon: microphone-alt
   responsibilities:
     - Provided A/V tech support to student groups and outside clients at NYU's Kimmel Center for Student Life.
 - title: Student
@@ -57,6 +63,7 @@
   timeperiod: September 2008 - May 2012
   type: Education
   url: https://steinhardt.nyu.edu/programs/music-business
+  icon: graduation-cap
   responsibilities:
     - B. Mus, Music Business
     - Coursework covered general business, music theory, aural comprehension, and music business specializations.

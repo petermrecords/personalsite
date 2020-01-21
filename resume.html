@@ -3,46 +3,43 @@ layout: default
 title: "Resume"
 ---
 
-{% include sitenav.html %}
 <div id="page">
-  <div class="title-section">
-    <div class="wrapper">
-      <h1 class="page-title">Resume</h1>
-      <p id="resume-download-button"><a href="{{ "download/petermenniti_resume_20200121.pdf" | relative_url }}">Download as PDF</a>
-    </div></p>
-  </div>
-  <div class="wrapper">
-    <div id="content">
-      <div id="timeline-line"></div>
-      <div id="timeline" class="content-section">
-        <ol id="timeline-items">
-          {% for item in site.data.resume %}
-            <li class="resume-item">
-              <div class="resume-time">
-                <time>{{ item.timeperiod }}</time>
-              </div>
-              <div class="resume-item-headline">
-                {% if item.type == "Job" %}
-                  <i class="fas fa-cogs"></i>
-                {% elsif item.type == "Education" %}
-                  <i class="fas fa-graduation-cap"></i>
-                {% endif %}
-                <div class="resume-headline-text">
-                  <span class="title">{{ item.title }}</span>
-                  <span class="company"><a href="{{ item.url }}">{{ item.company }}</a></span>
-                </div>
-              </div>
-              <div class="resume-item-body hidden">
-                <ul>
-                  {% for bullet in item.responsibilities %}
-                    <li>{{ bullet }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </li>
-          {% endfor %}
-        </ol>
+  <div id="title-section" class="shadowed">
+    {% include sitenav.html %}
+    <div class="wrapper" id="page-title">
+      <h1>Resume</h1>
+      <div id="resume-download-button">
+        <a href="{{ "download/petermenniti_resume_20200121.pdf" | relative_url }}">
+          <i class="fas fa-file-download"></i> Download PDF
+        </a>
       </div>
+    </div>
+  </div>
+  <div class="wrapper" id="content">
+    <div id="timeline">
+      <ol id="timeline-items">
+        {% for item in site.data.resume %}
+          <li class="resume-item">
+            <div class="resume-time">
+              <time>{{ item.timeperiod }}</time>
+            </div>
+            <div class="resume-item-headline">
+              <i class="fas fa-{{ item.icon }}"></i>
+              <div class="resume-headline-text">
+                <span class="title">{{ item.title }}</span>
+                <span class="company"><a href="{{ item.url }}">{{ item.company }}</a></span>
+              </div>
+            </div>
+            <div class="resume-item-body hidden">
+              <ul>
+                {% for bullet in item.responsibilities %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
     </div>
   </div>
 </div>
