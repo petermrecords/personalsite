@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0.01em 0.01em 0.01em $lightPurple;
+  text-shadow: 0em 0em 0.03em $lightPurple;
 };
 
 a:visted {
@@ -65,7 +65,7 @@ a:visted {
   top: 0;
   width: 100%;
   z-index: 1;
-  padding: 0.66em;
+  padding: 0.33em;
   #sitenav-brand {
     font-size: 2em;
     margin-left: 0.33em;
@@ -79,7 +79,7 @@ a:visted {
     color: white;
   }
   a:hover {
-    text-shadow: 0.01em 0.01em 0.01em $lightGrey;
+    text-shadow: 0em 0em 0.03em $lightGrey;
   }
   a:visited {
     color: $grey;
@@ -113,24 +113,28 @@ div.sitenav-section {
 }
 
 #timeline-items {
-  padding-left: 0px;
   .resume-item {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
     list-style-type: none;
   }
-  .resume-time {
-    display: none;
-  }
   .resume-item-headline {
-    .resume-headline-text {
-      display: inline;
-      border-bottom: 1px dotted $darkRed;
-      margin-left: 0.6em;
+    table {
       width: 100%;
-      .title {
-        font-family: $titleFont;
-      }
+      padding-bottom: 16px;
+      padding-top: 16px;
+    }
+    .icon {
+      width: 10%;
+    }
+    .title {
+      font-family: $titleFont;
+      font-size: 2em;
+      width: 35%;
+    }
+    .company {
+      width: 35%;
+    }
+    .time {
+      width: 20%;
     }
     i {
       font-size: 3em;
@@ -163,7 +167,7 @@ div.sitenav-section {
 }
 
 #title-section {
-  margin-top: 89px;
+  margin-top: 95px;
   background: $backgroundColor;
   #page-title {
     line-height: 3em;
@@ -199,5 +203,20 @@ div.sitenav-section {
 }
 
 #content {
-  padding-top: 150px;
+  padding-top: 180px;
+  padding-bottom: 95px;
+}
+
+#sitefooter {
+  position: fixed;
+  bottom: 0px;
+  background: $red;
+  color: $backgroundColor;
+  ul {
+    display: inline;
+  }
+  li {
+    display: inline;
+    margin-left: 1em;
+  }
 }

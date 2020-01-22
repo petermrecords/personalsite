@@ -20,17 +20,15 @@ title: "Resume"
       <ol id="timeline-items">
         {% for item in site.data.resume %}
           <li class="resume-item">
-            <div class="resume-time">
-              <time>{{ item.timeperiod }}</time>
-            </div>
             <div class="resume-item-headline">
-              <i class="fas fa-{{ item.icon }}"></i>
-              <div class="resume-headline-text">
-                <span class="title">{{ item.title }}</span>
-                <span class="company"><a href="{{ item.url }}">{{ item.company }}</a></span>
-              </div>
+              <table>
+                <th class="icon"><i class="fas fa-{{ item.icon }}"></i></th>
+                <th class="title">{{ item.title }}</th>
+                <th class="company"><a href="{{ item.url }}">{{ item.company }}</a></th>
+                <th class="time"><time>{{ item.timeperiod }}</time></th>
+              </table>
             </div>
-            <div class="resume-item-body hidden">
+            <div class="resume-item-body">
               <ul>
                 {% for bullet in item.responsibilities %}
                   <li>{{ bullet }}</li>
@@ -41,5 +39,8 @@ title: "Resume"
         {% endfor %}
       </ol>
     </div>
+  </div>
+  <div class="footer-section">
+    {% include sitefooter.html %}
   </div>
 </div>

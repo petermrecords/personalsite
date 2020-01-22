@@ -1,17 +1,19 @@
 <div id="sitenav" class="shadowed">
-  <nav>
-    <div id="sitenav-brand" class="sitenav-section">
-      <i class="fas fa-cog"></i>
-      <strong><a href="/">Peter Menniti</a></strong>
-    </div>
-    <div id="sitenav-nav" class="sitenav-section">
-      <ul>
-        {% for item in site.data.navigation %}
-          <li class="sitenav-navitem">
-            <a href="{{ item.link }}">{{ item.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+  <div class="wrapper">
+    <nav>
+      <div id="sitenav-brand" class="sitenav-section">
+        <i class="fas fa-cog"></i>
+        <strong><a href="/">Peter Menniti</a></strong>
+      </div>
+      <div id="sitenav-nav" class="sitenav-section">
+        <ul>
+          {% for item in site.data.navigation %}
+            <li class="sitenav-navitem">
+              <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>

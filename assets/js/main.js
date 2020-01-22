@@ -1,26 +1,18 @@
-function setTimelineHeight() {
-  var height = $("#timeline-items").height();
-  $("#timeline-line").height(height);
-  console.log("AS");
-};
-
 function toggleResumeDetails(element) {
-  var resumeBody = $(element).parent().parent().find(".resume-item-body");
-  resumeBody.slideToggle(500, function() {
-    setTimelineHeight();
-  });
+  var resumeBody = $(element).parent().parent().parent().parent().parent().parent().find(".resume-item-body");
+  resumeBody.slideToggle(500);
 };
 
 $(document).ready(function() {
 
-  $("#timeline-items").ready(function(e) {
-    setTimelineHeight();
-  });
-
   // show/hide resume details
-
   $(".resume-item-headline i").click(function(e) {
     toggleResumeDetails(this);
   });
 
+  // download button
+  $("#resume-download-button").click(function(e) {
+    var fileLink = $(this).children("a").attr("href");
+    window.location.href = fileLink;
+  });
 });
