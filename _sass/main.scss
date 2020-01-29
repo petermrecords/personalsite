@@ -219,4 +219,28 @@ div.sitenav-section {
     display: inline;
     margin-left: 1em;
   }
+  a {
+    color: $backgroundColor;
+  }
+  a:hover {
+    text-shadow: 0em 0em 0.03em $lightGrey;
+  }
 }
+
+#photo {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.flexwrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.photo-section {
+  padding: 8px;
+  border-right: 1px dotted $red;
+}
+

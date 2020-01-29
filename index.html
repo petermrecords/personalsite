@@ -3,11 +3,24 @@ layout: default
 title: "Home"
 ---
 
-{% include sitenav.html %}
 <div id="page">
-  <div class="wrapper">
-    <div id="content">
+  <div id="title-section" class="shadowed">
+    {% include sitenav.html %}
+    <div class="wrapper">
       <h1>Peter Menniti</h1>
     </div>
+  </div>
+  <div id="content" class="wrapper">
+    <div class="flexwrapper">
+      <div class="photo-section">
+        <img src="{{ "assets/img/picture.jpeg" | relative_url }}" id="photo"/>
+      </div>
+      <div class="wrapper">
+        <p>Peter Menniti is a full stack web developer and cat owner from New York, NY, and this is his personal website.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    {% include sitefooter.html %}
   </div>
 </div>
