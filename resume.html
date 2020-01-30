@@ -2,7 +2,6 @@
 layout: default
 title: "Resume"
 ---
-
 <div id="page">
   <section id="title-section" class="shadowed">
     {% include sitenav.html %}
@@ -16,29 +15,28 @@ title: "Resume"
     </div>
   </section>
   <section class="wrapper" id="content">
-    <div id="timeline">
-      <ol id="timeline-items">
+    <table id="resume">
+      <tbody>
         {% for item in site.data.resume %}
-          <li class="resume-item">
-            <div class="resume-item-headline">
-              <table>
-                <th class="icon"><i class="fas fa-{{ item.icon }}"></i></th>
-                <th class="title">{{ item.title }}</th>
-                <th class="company"><a href="{{ item.url }}">{{ item.company }}</a></th>
-                <th class="time"><time>{{ item.timeperiod }}</time></th>
-              </table>
-            </div>
-            <div class="resume-item-body">
+          <tr class="resume-headline">
+            <th class="resume-time">{{ item.timeperiod }}</th>
+            <th class="resume-icon"><i class="{{ item.icon }}"></i></th>
+            <th class="resume-info"><span class="resume-title">{{ item.title }}</span>, <a href="{{ item.url }}" class="resume-company">{{ item.company }}</a></th>
+          </tr>
+          <tr class="resume-details">
+            <td class="resume-placeholder">&nbsp;</td>
+            <td class="resume-placeholder">&nbsp;</td>
+            <td class="resume-details">
               <ul>
-                {% for bullet in item.responsibilities %}
-                  <li>{{ bullet }}</li>
+                {% for detail in item.responsibilities %}
+                  <li>{{ detail }}</li>
                 {% endfor %}
               </ul>
-            </div>
-          </li>
+            </td>
+          </tr>
         {% endfor %}
-      </ol>
-    </div>
+      </tbody>
+    </table>
   </section>
   <section class="footer-section">
     {% include sitefooter.html %}

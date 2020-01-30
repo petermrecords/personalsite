@@ -1,0 +1,9 @@
+- name: GitHub
+  link: https://github.com/petermrecords
+  icon: fab fa-github
+- name: LinkedIn
+  link: https://www.linkedin.com/in/peter-menniti-53970152/
+  icon: fab fa-linkedin
+- name: Email
+  link: mailto:petermennitirecords@gmail.com
+  icon: fas fa-at

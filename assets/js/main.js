@@ -1,12 +1,13 @@
 function toggleResumeDetails(element) {
-  var resumeBody = $(element).parent().parent().parent().parent().parent().parent().find(".resume-item-body");
-  resumeBody.slideToggle(500);
+  var resumeBody = $(element).parent().parent().parent()
+  console.log(resumeBody);
+  // resumeBody.slideToggle(500);
 };
 
 $(document).ready(function() {
 
   // show/hide resume details
-  $(".resume-item-headline i").click(function(e) {
+  $(".resume-headline i").click(function(e) {
     toggleResumeDetails(this);
   });
 
