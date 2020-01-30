@@ -5,14 +5,24 @@ permalink: /404.html
 ---
 
 <div id="page">
-  <div id="content" class="wrapper">
+  <section id="title-section" class="shadowed">
+    {% include sitenav.html %}
+    <div class="wrapper">
+      <h1>404</h1>
+    </div>
+  </section>
+  <section id="content" class="wrapper">
     <div class="flexwrapper">
       <div class="photo-section">
-        <img src="{{ "assets/img/404.jpg" | relative_url }}" id="photo"/>
+        <img src="{{ "assets/img/404.jpg" | relative_url }}" class="page-photo"/>
       </div>
-      <div class="wrapper">
-        <p>That page doesn't exist, sorry.</p>
+      <div class="text-section">
+        <p>Couldn't find what you were looking for!</p>
+        <p><a href="{{ "/" | relative_url }}">Go Home</a></p>
       </div>
     </div>
-  </div>
+  </section>
+  <section id="footer-section">
+    {% include sitefooter.html %}
+  </section>
 </div>

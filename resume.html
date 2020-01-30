@@ -4,9 +4,9 @@ title: "Resume"
 ---
 
 <div id="page">
-  <div id="title-section" class="shadowed">
+  <section id="title-section" class="shadowed">
     {% include sitenav.html %}
-    <div class="wrapper" id="page-title">
+    <div class="wrapper">
       <h1>Resume</h1>
       <div id="resume-download-button">
         <a href="{{ "download/petermenniti_resume_20200121.pdf" | relative_url }}">
@@ -14,8 +14,8 @@ title: "Resume"
         </a>
       </div>
     </div>
-  </div>
-  <div class="wrapper" id="content">
+  </section>
+  <section class="wrapper" id="content">
     <div id="timeline">
       <ol id="timeline-items">
         {% for item in site.data.resume %}
@@ -39,8 +39,8 @@ title: "Resume"
         {% endfor %}
       </ol>
     </div>
-  </div>
-  <div class="footer-section">
+  </section>
+  <section class="footer-section">
     {% include sitefooter.html %}
-  </div>
+  </section>
 </div>

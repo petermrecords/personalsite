@@ -4,22 +4,20 @@ title: "About"
 ---
 
 <div id="page">
-  {% include sitenav.html %}
-  <div id="title-section" class="shadowed">
-    <div class="wrapper" id="page-title">
+  <section id="title-section" class="shadowed">
+    {% include sitenav.html %}
+    <div class="wrapper">
       <h1>About</h1>
     </div>
-  </div>
-  <div id="content">
-    <div class="wrapper">
-      <p>This site was created with the Jekyll framework.</p>
-      <ul id="about-links">
-        <li><a href="https://github.com/petermrecords/personalsite">Site Source via Github</a></li>
-        <li><a href="https://jekyllrb.com/">Jekyll</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-section">
+  </section>
+  <section id="content" class="wrapper">
+    <p>This site was created with the Jekyll framework.</p>
+    <ul id="about-links">
+      <li><a href="https://github.com/petermrecords/personalsite">Site Source via Github</a></li>
+      <li><a href="https://jekyllrb.com/">Jekyll</a></li>
+    </ul>
+  </section>
+  <section class="footer-section">
     {% include sitefooter.html %}
-  </div>
+  </section>
 </div>

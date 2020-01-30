@@ -1,3 +1,5 @@
+
+// VARIABLES
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
 
@@ -19,15 +21,27 @@ $darkPurple: #31318F;
 $grey: #B3B6B7;
 $lightGrey: #ECF0F1;
 
+html {
+  height: 100%;
+}
+
 body {
   background: $backgroundColor;
   color: $darkRed;
   font-family: $bodyFont;
   padding: 0px;
   margin: 0px;
+  height: 100%;
 }
 
-div.wrapper {
+#page {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+// POSITIONING
+.wrapper {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.5em;
@@ -36,10 +50,65 @@ div.wrapper {
   margin: 0 auto;
 }
 
-div.shadowed {
+.shadowed {
   box-shadow: 0px 1px 4px black;
   width: 100%;
   position: fixed;
+}
+
+.flexwrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.photo-section {
+  padding: 8px;
+  border-right: 1px dotted $red;
+}
+
+.text-section {
+  padding-left: 16px;
+  p:first-child {
+    margin-top: 0px;
+  }
+}
+
+.sitenav-section {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  ul {
+    padding-left: 0px;
+    display: inline;
+    list-style-type: none;
+    li {
+      display: inline;
+      margin-left: 1em;
+    }
+  }
+}
+
+// SITE STYLES
+div.navbar {
+  z-index: 1;
+  color: $backgroundColor;
+  a {
+    color: $backgroundColor;
+  }
+  a:hover {
+    text-shadow: 0em 0em 0.03em $lightGrey;
+  }
+}
+
+img.page-photo {
+  width: 300px;
+  height: 300px;
+  @media screen and (max-width: 538px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -59,44 +128,42 @@ a:visted {
   color: $darkPurple;
 }
 
+// SECTIONS
+
+section#title-section {
+  background: $backgroundColor;
+  margin-top: 84px;
+  @media screen and (max-width: 538px) {
+    margin-top: 122px;
+  }
+  h1 {
+    display: inline-block;
+    margin: 8px;
+    margin-right: 32px;
+    font-size: 2.7em;
+    vertical-align: middle;
+  }
+}
+
+section#content {
+  padding-top: 169px;
+  padding-bottom: 48px;
+  @media only screen and (max-width: 538px) {
+    padding-top: 207px;
+  }
+}
+
+// BITS AND PIECES
 #sitenav {
-  background: $red;
-  position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 1;
-  padding: 0.33em;
+  background: $red;
   #sitenav-brand {
     font-size: 2em;
     margin-left: 0.33em;
     margin-right: 0.5em;
     font-family: $titleFont;
     i {
-      color: white;
-    }
-  }
-  a {
-    color: white;
-  }
-  a:hover {
-    text-shadow: 0em 0em 0.03em $lightGrey;
-  }
-  a:visited {
-    color: $grey;
-  }
-}
-
-div.sitenav-section {
-  display: inline-block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  ul {
-    padding-left: 0px;
-    display: inline;
-    list-style-type: none;
-    li {
-      display: inline;
-      margin-left: 1em;
+      color: $backgroundColor;
     }
   }
 }
@@ -162,85 +229,27 @@ div.sitenav-section {
   }
 }
 
-.page-title {
-  font-family: $titleFont;
-}
-
-#title-section {
-  margin-top: 95px;
-  background: $backgroundColor;
-  #page-title {
-    line-height: 3em;
+#resume-download-button {
+  display: inline-block;
+  border: 4px solid $darkGreen;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px $green;
+  vertical-align: middle;
+  padding: 2px;
+  margin: 4px;
+  a {
+    color: $darkGreen;
+    font-size: 0.7em;
   }
-  h1 {
-    display: inline-block;
-    margin: 8px;
-    margin-right: 32px;
-  }
-  h1 {
-    font-size: 2.7em;
-    vertical-align: middle;
-  }
-  #resume-download-button {
-    display: inline-block;
-    border: 4px solid $darkRed;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px $red;
-    vertical-align: middle;
-    padding: 2px;
-    margin: 4px;
-    a {
-      color: $darkRed;
-      font-size: 0.7em;
-    }
-    a:hover {
-      text-shadow: none;
-    }
-  }
-  #resume-download-button:hover {
-    box-shadow: 0px 0px 8px $red;
+  a:hover {
+    text-shadow: none;
   }
 }
-
-#content {
-  padding-top: 180px;
-  padding-bottom: 95px;
+#resume-download-button:hover {
+  box-shadow: 0px 0px 8px $green;
 }
 
 #sitefooter {
-  position: fixed;
+  background: $darkPurple;
   bottom: 0px;
-  background: $red;
-  color: $backgroundColor;
-  ul {
-    display: inline;
-  }
-  li {
-    display: inline;
-    margin-left: 1em;
-  }
-  a {
-    color: $backgroundColor;
-  }
-  a:hover {
-    text-shadow: 0em 0em 0.03em $lightGrey;
-  }
 }
-
-#photo {
-  max-width: 300px;
-  max-height: 300px;
-}
-
-.flexwrapper {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.photo-section {
-  padding: 8px;
-  border-right: 1px dotted $red;
-}
-
