@@ -15,28 +15,21 @@ title: "Resume"
     </div>
   </section>
   <section class="wrapper" id="content">
-    <table id="resume">
-      <tbody>
-        {% for item in site.data.resume %}
-          <tr class="resume-headline">
-            <th class="resume-time">{{ item.timeperiod }}</th>
-            <th class="resume-icon"><i class="{{ item.icon }}"></i></th>
-            <th class="resume-info"><span class="resume-title">{{ item.title }}</span>, <a href="{{ item.url }}" class="resume-company">{{ item.company }}</a></th>
-          </tr>
-          <tr class="resume-details">
-            <td class="resume-placeholder">&nbsp;</td>
-            <td class="resume-placeholder">&nbsp;</td>
-            <td class="resume-details">
-              <ul>
-                {% for detail in item.responsibilities %}
-                  <li>{{ detail }}</li>
-                {% endfor %}
-              </ul>
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    <ul id="resume">
+      {% for item in site.data.resume %}
+        <li class="resume-headline">
+          <span class="resume-icon"><i class="{{ item.icon }}"></i></span>
+          <span class="resume-title">{{ item.title }}</span>, <a href="{{ item.url }}" class="resume-company">{{ item.company }}</a>
+        </li>
+        <li class="resume-details">
+          <ul>
+            {% for detail in item.responsibilities %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
   </section>
   <section class="footer-section">
     {% include sitefooter.html %}
