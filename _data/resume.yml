@@ -1,6 +1,6 @@
 - title: Systems Development
   company: Beggars Group USA
-  timeperiod: October 2017 - Present
+  start: 2017-10-01
   type: Job
   url: https://www.beggars.com/
   icon: fas fa-cogs
@@ -14,7 +14,8 @@
     - Bug and data fixes.
 - title: Consultant
   company: Beggars Group USA
-  timeperiod: April 2017 - October 2017
+  start: 2017-04-01
+  end: 2017-10-01
   type: Job
   url: https://www.beggars.com/
   icon: fas fa-comments
@@ -23,7 +24,8 @@
     - Assisted with royalties tasks as needed.
 - title: Student
   company: Dev Bootcamp
-  timeperiod: February 2017 - April 2017
+  start: 2017-02-01
+  end: 2017-04-01
   type: Education
   url: https://en.wikipedia.org/wiki/Dev_Bootcamp
   icon: fas fa-code
@@ -31,7 +33,8 @@
     - 18 week (9 weeks independent study, 9 weeks full time onsite instruction) program covering programming fundamentals, web development and the Ruby on Rails framework.
 - title: Royalties Coordinator
   company: Beggars Group USA
-  timeperiod: February 2013 - February 2017
+  start: 2013-02-01
+  end: 2017-02-01
   type: Job
   url: https://www.beggars.com/
   icon: fas fa-hand-holding-usd
@@ -42,7 +45,8 @@
     - Registered recordings with the US copyright office and assisted with mechanical license requests.
 - title: Royalties Assistant
   company: Beggars Group USA
-  timeperiod: July 2012 - February 2013
+  start: 2012-07-01
+  end: 2013-02-01
   type: Job
   url: https://www.beggars.com/
   icon: fas fa-hand-holding-usd
@@ -52,7 +56,8 @@
     - Data entry.
 - title: Media Assistant
   company: Kimmel Media Services
-  timeperiod: January 2008 - June 2012
+  start: 2008-01-01
+  end: 2012-07-01
   type: Job
   url: https://www.nyu.edu/community/conference-event-services/amenities-and-services/multimedia-resources.html
   icon: fas fa-microphone-alt
@@ -60,7 +65,8 @@
     - Provided A/V tech support to student groups and outside clients at NYU's Kimmel Center for Student Life.
 - title: Student
   company: New York University
-  timeperiod: September 2008 - May 2012
+  start: 2008-09-01
+  end: 2012-05-01
   type: Education
   url: https://steinhardt.nyu.edu/programs/music-business
   icon: fas fa-graduation-cap

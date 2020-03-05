@@ -17,17 +17,32 @@ title: "Resume"
   <section class="wrapper" id="content">
     <ul id="resume">
       {% for item in site.data.resume %}
+      <div class="resume-element">
         <li class="resume-headline">
-          <span class="resume-icon"><i class="{{ item.icon }}"></i></span>
-          <span class="resume-title">{{ item.title }}</span>, <a href="{{ item.url }}" class="resume-company">{{ item.company }}</a>
+          <div class="resume-decor">
+            <i class="{{ item.icon }}"></i>
+          </div>
+          <div class="resume-content">
+            <span class="resume-title">{{ item.title }}</span>, <span class="resume-company">{{ item.company }}</span> • <span class="resume-timeframe">
+              {{ item.start | date: "%B %Y"}} - 
+              {% if item.end %} 
+                {{ item.end | date: "%B %Y" }} 
+              {% else %} 
+                Present
+              {% endif %}
+            </span>
+          </div>
         </li>
         <li class="resume-details">
-          <ul>
-            {% for detail in item.responsibilities %}
-              <li>{{ detail }}</li>
-            {% endfor %}
-          </ul>
+          <div class="resume-content">
+            <ul>
+              {% for detail in item.responsibilities %}
+                <li>{{ detail }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         </li>
+      </div>
       {% endfor %}
     </ul>
   </section>
