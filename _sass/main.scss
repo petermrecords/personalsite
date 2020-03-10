@@ -56,13 +56,6 @@ body {
   position: fixed;
 }
 
-.flexwrapper {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 .photo-section {
   border-right: 1px dotted $red;
 }
@@ -106,7 +99,9 @@ img.page-photo {
   width: 300px;
   height: 300px;
   padding: 8px;
-  margin: 0px;
+  margin-right: 8px;
+  float: left;
+  border-right: 1px dotted $darkRed;
   @media screen and (max-width: 538px) {
     width: 200px;
     height: 200px;
@@ -143,6 +138,7 @@ section#title-section {
     margin-right: 32px;
     font-size: 2.7em;
     vertical-align: middle;
+    color: $green;
   }
 }
 
@@ -178,7 +174,7 @@ section#content {
   padding: 2px;
   margin: 4px;
   a {
-    color: $darkGreen;
+    color: $green;
     font-size: 0.7em;
   }
   a:hover {
@@ -235,4 +231,16 @@ section#content {
 #sitefooter {
   background: $darkPurple;
   bottom: 0px;
+}
+
+#about-links {
+  padding: 0px;
+  color: $darkPurple;
+  font-family: $titleFont;
+  font-size: 0.8em;
+  li {
+    display: inline-block;
+    list-style-type: square;
+    margin: 0px;
+  }
 }

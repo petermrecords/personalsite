@@ -11,16 +11,10 @@ title: "Home"
     </div>
   </section>
   <section id="content" class="wrapper">
-    <div class="flexwrapper">
-      <div class="photo-section">
-        <img src="{{ "assets/img/picture.jpeg" | relative_url }}" class="page-photo"/>
-      </div>
-      <div class="text-section">
-        <p>Peter Menniti is a full stack web developer from New York, NY, and this is his personal website.</p>
-        <p>He is currently employed by Beggars Group USA, where he works on a database application that helps the company manage its catalog and process sales reports from its physical and digital distributors.</p>
-        <p>Read and download his <a href="{{ "resume.html" | relative_url }}">resume</a>, or learn more <a href="{{ "about.html" | relative_url }}">about</a> how the site was created.</p>
-      </div>
-    </div>
+    <img src="{{ "assets/img/photo.jpg" | relative_url }}" class="page-photo"/>
+    <p>Peter Menniti is a full stack web developer from New York, NY, and this is his personal website.</p>
+    <p>He is currently employed by <a href="https://www.beggars.com/group/about">Beggars Group USA</a>, where he works on a database application that helps the company manage its catalog and process sales reports from its physical and digital distributors.</p>
+    <p>Read and download his <a href="{{ "resume.html" | relative_url }}">resume</a>, or learn more <a href="{{ "about.html" | relative_url }}">about</a> how the site was created.</p>
   </section>
   <section class="footer-section">
     {% include sitefooter.html %}
